@@ -232,6 +232,7 @@ public class Fracture : MonoBehaviour
         fragmentRigidBody.drag = thisRigidBody.drag;
         fragmentRigidBody.angularDrag = thisRigidBody.angularDrag;
         fragmentRigidBody.useGravity = thisRigidBody.useGravity;
+        fragmentRigidBody.collisionDetectionMode = thisRigidBody.collisionDetectionMode;
 
         // If refracturing is enabled, create a copy of this component and add it to the template fragment object
         if (refractureOptions.enableRefracturing &&
